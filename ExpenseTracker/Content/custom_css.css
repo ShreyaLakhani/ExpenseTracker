@@ -1,0 +1,10 @@
+﻿body {
+}
+.lblExpense, .lblLimit {
+    padding: 35px;
+    background-color: lightgray;
+}
+.pwd {
+    width: 150px;
+    height: 25px;
+}

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BusinessLayer.Expense>
+@{
+    <link href="~/Content/custom_css.css" rel="stylesheet" />
+}
+
+<h3>Dashboard</h3>
+<hr />
+
+<p>
+    @Html.ActionLink("Back To List", "Dashboard")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div>
+    @Html.Label((string)ViewBag.CategoryTotalAmount, new { @id = "CategoryExpense", @class = "lblExpense" })
+    @Html.Label((string)ViewBag.CategoryLimit, new { @id = "CategoryLimit", @class = "lblLimit", @style = "margin-left:60px;" })
+</div>

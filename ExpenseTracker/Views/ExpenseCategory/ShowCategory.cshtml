@@ -1,0 +1,47 @@
+﻿@model IEnumerable<BusinessLayer.ExpenseCategory>
+
+@{
+    ViewBag.Title = "ShowCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Expense Category</h3>
+
+<p>
+    @Html.ActionLink("Create New", "AddCategory")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryLimit)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryLimit)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditCategory", new { id = item.CategoryId }) |
+            @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+            @Html.ActionLink("Delete", "DeleteCategory", new { id = item.CategoryId },
+                new { onclick = "return confirm('Are you sure wants to delete?');" })
+        </td>
+    </tr>
+}
+
+</table>
