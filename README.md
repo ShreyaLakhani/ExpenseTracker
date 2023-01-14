@@ -10,7 +10,7 @@
   1. Open visual studio
   2. Install the prerequisite steps
   3. Load the project
-  4. Change the data source from connectionString property in Web.config file inside <connectionStrings> </connectionStrings>
+  4. Change the data source from connectionString property in Web.config file inside connectionStrings tag
   5. Run the project
 
 
