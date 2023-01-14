@@ -7,11 +7,11 @@
 
 
 **Steps to Run the Project**
-  step-1: Open visual studio
-  step-2: Install the prerequisite steps
-  step-3: Load the project
-  step-4: Change the data source from connectionString property in Web.config file inside <connectionStrings> </connectionStrings>
-  step-5: Run the project
+  1. Open visual studio
+  2. Install the prerequisite steps
+  3. Load the project
+  4. Change the data source from connectionString property in Web.config file inside <connectionStrings> </connectionStrings>
+  5. Run the project
 
 
 **Screenshots**
