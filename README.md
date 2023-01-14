@@ -16,4 +16,24 @@ Steps to Run the Project
 
 Screenshots
 
+Register
+
 ![Screenshot (1092)](https://user-images.githubusercontent.com/112111306/212459272-f327f1d8-1d24-47db-b075-964c9474acfd.png)
+
+Login
+
+![Screenshot (1093)](https://user-images.githubusercontent.com/112111306/212459293-cddd83ae-e675-4652-b1ca-9c96fa0adc8b.png)
+
+Dashboard
+
+![Screenshot (1094)](https://user-images.githubusercontent.com/112111306/212459308-5cd81dcb-867f-4483-9f45-0e1609f01074.png)
+
+![Screenshot (1095)](https://user-images.githubusercontent.com/112111306/212459312-2c4c6ccb-ba8d-4aa4-8391-cd2a605f52c6.png)
+
+Expense Category
+
+![Screenshot (1096)](https://user-images.githubusercontent.com/112111306/212459331-1f234f02-26b2-4608-83a3-c44748a7468f.png)
+
+Expense
+
+![Screenshot (1097)](https://user-images.githubusercontent.com/112111306/212459341-b3bb5563-bda4-42d5-abb1-e34e169fff18.png)
